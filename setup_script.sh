@@ -4,7 +4,7 @@
 sudo apt-get update
 
 # Basic utilities 
-yes Y | sudo apt-get install vim git cmake tmux
+yes Y | sudo apt-get install vim git cmake tmux p7zip-full
 
 # Change for high DPI
 gsettings set org.gnome.desktop.interface scaling-factor 2
