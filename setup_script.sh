@@ -12,6 +12,9 @@ gsettings set org.gnome.desktop.interface scaling-factor 2
 # Turn off display sleep
 gsettings set org.gnome.desktop.session idle-delay 0 
 
+# Hide desktop trashcan
+gsettings set org.gnome.nautilus.desktop trash-icon-visible false
+
 # For resetting back to default
 # gsettings reset org.gnome.desktop.interface scaling-factor
 
