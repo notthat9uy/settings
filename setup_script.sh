@@ -44,3 +44,6 @@ sudo pip3 install --upgrade keystone-engine
 sudo pip3 install --upgrade unicorn
 sudo pip3 install --upgrade capstone
 sudo pip3 install --upgrade ropper
+
+# tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
