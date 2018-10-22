@@ -18,15 +18,12 @@ gsettings set org.gnome.nautilus.desktop trash-icon-visible false
 # For resetting back to default
 # gsettings reset org.gnome.desktop.interface scaling-factor
 
-# Pull settings from github
-git clone https://github.com/notthat9uy/settings.git
-
 # Copy settings from github
-cp settings/.vimrc ~/.vimrc
-cp settings/.tmux.conf ~/.tmux.conf
+cp .vimrc ~/.vimrc
+cp .tmux.conf ~/.tmux.conf
 
 echo "" >> ~/.bashrc
-cat settings/.bashrc >> ~/.bashrc
+cat .bashrc >> ~/.bashrc
 
 # pwntools
 yes Y | sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
@@ -46,4 +43,6 @@ sudo pip3 install --upgrade capstone
 sudo pip3 install --upgrade ropper
 
 # tmux
+# Don't forget to do prefix + I to install all plugins!
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
