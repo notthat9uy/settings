@@ -26,9 +26,9 @@ echo "" >> ~/.bashrc
 cat .bashrc >> ~/.bashrc
 
 # pwntools
-yes Y | sudo apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
-sudo pip2 install --upgrade pip
-sudo pip2 install --upgrade pwntools
+yes Y | sudo apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
+sudo python3 -m pip install --upgrade pip
+sudo python3 -m pip install --upgrade git+https://github.com/Gallopsled/pwntools.git@dev
 
 # gef
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
